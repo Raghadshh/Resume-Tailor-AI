@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "+1-555-0123",
+    "location": "San Francisco, CA",
+    "summary": "Experienced software developer with 5+ years in full-stack development",
+    "skills": [
+      "JavaScript",
+      "Python",
+      "React",
+      "Node.js",
+      "SQL",
+      "AWS"
+    ],
+    "experience": [
+      {
+        "company": "Tech Company Inc",
+        "position": "Senior Developer",
+        "duration": "2 years",
+        "description": "Led development of web applications and mentored junior developers"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University Name",
+        "degree": "Bachelor of Science",
+        "field": "Computer Science",
+        "year": 2018
+      }
+    ]
+  }
+}
