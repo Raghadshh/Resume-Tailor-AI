@@ -61,14 +61,15 @@ uvicorn main:app --reload
 
 The API starts at `http://127.0.0.1:8000`.
 
-### 5. Open the frontend
+### 5. Open the app
 
-Open `frontend/index.html` in your browser. Paste a job description and click **Tailor Resume**.
+Visit **http://127.0.0.1:8000** in your browser. Paste a job description and click **Tailor Resume**.
 
 ## API Endpoints
 
 | Method | Path | Description |
 |--------|------|-------------|
-| GET | `/` | Health check |
-| GET | `/profile` | Returns stored profile data |
-| POST | `/analyze-job` | Accepts `{"job_description": "..."}`, returns tailored resume |
+| GET | `/api` | Health check |
+| GET | `/api/profile` | Returns stored profile data |
+| POST | `/api/analyze-job` | Accepts `{"job_description": "..."}`, returns tailored resume |
+| GET | `/docs` | Interactive API documentation (Swagger UI) |

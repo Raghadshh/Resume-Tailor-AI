@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import json
 from pathlib import Path
 from pydantic import BaseModel
@@ -20,6 +21,7 @@ app.add_middleware(
 
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "profile_bank.json"
 TEMPLATE_PATH = Path(__file__).resolve().parent.parent / "data" / "resume_template.txt"
+FRONTEND_PATH = Path(__file__).resolve().parent.parent / "frontend"
 
 
 class JobRequest(BaseModel):
@@ -31,12 +33,12 @@ def load_json(path):
         return json.load(f)
 
 
-@app.get("/")
+@app.get("/api")
 def home():
     return {"message": "Resume Tailor AI backend is running"}
 
 
-@app.get("/profile")
+@app.get("/api/profile")
 def get_profile():
     try:
         return load_json(DATA_PATH)
@@ -46,7 +48,7 @@ def get_profile():
         return {"error": "Profile data is corrupted"}
 
 
-@app.post("/analyze-job")
+@app.post("/api/analyze-job")
 def analyze_job(request: JobRequest):
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
@@ -118,3 +120,6 @@ Generate a complete, well-formatted resume tailored to this job. Highlight the m
         return {"resume": generated}
     except Exception as e:
         return {"error": f"AI generation failed: {str(e)}"}
+
+
+app.mount("/", StaticFiles(directory=FRONTEND_PATH, html=True), name="frontend")
