@@ -7,21 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Resume Tailor AI</h1>
+        <p class="subtitle">Paste a job description below to generate a tailored resume</p>
 
-    <h1>Resume Tailor AI</h1>
+        <textarea
+            id="jobDescription"
+            placeholder="Paste a job description here..."
+            rows="8"
+        ></textarea>
 
-    <textarea
-        id="jobDescription"
-        placeholder="Paste a job description here..."
-    ></textarea>
+        <button id="tailorBtn" onclick="submitJobDescription()">
+            Tailor Resume
+        </button>
 
-    <button onclick="submitJobDescription()">
-        Tailor Resume
-    </button>
+        <div id="loading" class="hidden">
+            <span class="spinner"></span>
+            Generating tailored resume...
+        </div>
 
-    <pre id="responseOutput"></pre>
+        <div id="error" class="hidden"></div>
+
+        <div id="result" class="hidden">
+            <h2>Tailored Resume</h2>
+            <button id="copyBtn" onclick="copyResume()">Copy to Clipboard</button>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

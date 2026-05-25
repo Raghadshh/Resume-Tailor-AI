@@ -1,0 +1,17 @@
+{NAME}
+{EMAIL} | {LINKEDIN} | {GITHUB}
+
+PROFESSIONAL SUMMARY
+{summary}
+
+SKILLS
+{skills}
+
+EXPERIENCE
+{experience}
+
+EDUCATION
+{education}
+
+PROJECTS
+{projects}

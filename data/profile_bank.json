@@ -1,13 +1,39 @@
-
 {
   "personal": {
     "name": "Raghad Shaheen",
-    "email": "",
-    "linkedin": "",
-    "github": ""
+    "email": "raghad.a.y.shaheen@email.com",
+    "linkedin": "linkedin.com/in/raghad-shaheen",
+    "github": "github.com/raghadshh"
   },
-  "education": [],
-  "skills": [],
-  "experience": [],
-  "projects": []
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "school": "University of North Texas",
+      "year": "2025 - 2027"
+    }
+  ],
+  "skills": [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "FastAPI",
+    "Node.js",
+    "PostgreSQL",
+    "MongoDB",
+    "Docker",
+    "Git",
+    "REST APIs",
+    "Machine Learning",
+    "OpenAI API",
+    "Prompt Engineering",
+    "Data Structures & Algorithms"
+  ],
+
+  "projects": [
+    {
+      "name": "Resume Tailor AI",
+      "description": "Full-stack AI-powered resume customization tool using FastAPI, OpenAI API, and a responsive frontend. Dynamically tailors resume content to match job descriptions."
+    }
+  ]
 }

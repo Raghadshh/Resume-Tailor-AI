@@ -1,0 +1,13 @@
+We are looking for a Software Engineer with experience in Python, React, and building RESTful APIs. You will work on our core platform, designing and implementing scalable microservices, integrating third-party services, and collaborating with the frontend team to deliver end-to-end features.
+
+Requirements:
+- 1+ years of experience with Python and a web framework (FastAPI, Django, or Flask)
+- Experience with React or similar frontend frameworks
+- Familiarity with PostgreSQL or other relational databases
+- Knowledge of Docker and cloud services (AWS/GCP)
+- Strong problem-solving and communication skills
+
+Nice to have:
+- Experience with AI/ML APIs (OpenAI, Anthropic, etc.)
+- Contributions to open source projects
+- Experience with CI/CD pipelines
